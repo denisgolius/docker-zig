@@ -29,17 +29,17 @@ if [ "${MASTER_HASH}" != "${LAST_BUILD_MASTER_HASH}" ]; then
         --build-arg "ZIG_VERSION=master" \
         --build-arg "ZIG_URL=${MASTER_LINUX_URL}" \
         --build-arg "ZIG_SHA256=${MASTER_LINUX_SHA}" \
-        -t "euantorano/zig:master-${MASTER_HASH}" \
-        -t 'euantorano/zig:master' \
-        -t "ghcr.io/euantorano/zig:master-${MASTER_HASH}" \
-        -t 'ghcr.io/euantorano/zig:master' \
+        -t "denisgolius/zig:master-${MASTER_HASH}" \
+        -t 'denisgolius/zig:master' \
+        -t "ghcr.io/denisgolius/zig:master-${MASTER_HASH}" \
+        -t 'ghcr.io/denisgolius/zig:master' \
         .
 
-    docker push "euantorano/zig:master-${MASTER_HASH}"
-    docker push 'euantorano/zig:master'
+    docker push "denisgolius/zig:master-${MASTER_HASH}"
+    docker push 'denisgolius/zig:master'
     
-    docker push "ghcr.io/euantorano/zig:master-${MASTER_HASH}"
-    docker push 'ghcr.io/euantorano/zig:master'
+    docker push "ghcr.io/denisgolius/zig:master-${MASTER_HASH}"
+    docker push 'ghcr.io/denisgolius/zig:master'
 
     echo "${MASTER_HASH}" > ./last_master
 fi
@@ -67,13 +67,13 @@ while read release; do
             --build-arg "ZIG_VERSION=${release}" \
             --build-arg "ZIG_URL=${VERSION_RELEASE_LINUX_URL}" \
             --build-arg "ZIG_SHA256=${VERSION_RELEASE_LINUX_SHA}" \
-            -t "euantorano/zig:${release}" \
-            -t "ghcr.io/euantorano/zig:${release}" \
+            -t "denisgolius/zig:${release}" \
+            -t "ghcr.io/denisgolius/zig:${release}" \
             .
 
-        docker push "euantorano/zig:${release}"
+        docker push "denisgolius/zig:${release}"
 
-        docker push "ghcr.io/euantorano/zig:${release}"
+        docker push "ghcr.io/denisgolius/zig:${release}"
 
         echo "${release}" > ./last_version
     fi
