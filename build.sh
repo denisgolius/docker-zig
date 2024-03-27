@@ -48,7 +48,7 @@ fi
 OTHER_RELEASES=$(echo "$RELEASES" | jq --raw-output 'keys | map(select(. != "master")) | .[]')
 
 # check to see if we have details for a previous version
-LAST_VERSION='0.7.0'
+LAST_VERSION='0.11.0'
 if [ -f './last_version' ]; then
     LAST_VERSION=$(cat './last_version')
 fi
