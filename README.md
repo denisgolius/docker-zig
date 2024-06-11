@@ -2,19 +2,19 @@
 
 [![Nightly Build](https://github.com/denisgolius/docker-zig/actions/workflows/nightly.yml/badge.svg)](https://github.com/denisgolius/docker-zig/actions/workflows/nightly.yml)
 
-A docker image for [Zig](https://ziglang.org) based upon [Alpine Linux](https://www.alpinelinux.org/releases/) `3.19.1` .
+A docker image for [Zig](https://ziglang.org) based upon [Alpine Linux](https://www.alpinelinux.org/releases/) `3.20.0` .
 
 ## Using this image
 
 ### Building an executable
 
 ```
-docker run -v $PWD:/app denisgolius/zig:0.12.0 build-exe hello.zig
+docker run -v $PWD:/app denisgolius/zig:0.13.0 build-exe hello.zig
 ```
 
 ## Available tags
 
-There are two variants of tags provided by this repository - release tags such as `0.12.0`, and `master` branch builds such as `master-6a65561e3`.
+There are two variants of tags provided by this repository - release tags such as `0.13.0`, and `master` branch builds such as `master-6a65561e3`.
 
 The most recent `master-X` build is always tagged as simply `master` as well as having a tag including the Git hash for the release.
 
