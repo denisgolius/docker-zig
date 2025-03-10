@@ -1,8 +1,8 @@
 FROM alpine:3.21.3
 
 ARG ZIG_VERSION=0.14.0
-ARG ZIG_URL=https://ziglang.org/download/${ZIG_VERSION}/zig-linux-x86_64-${ZIG_VERSION}.tar.xz
-ARG ZIG_SHA256=d731dc81e1dff2d5f9b1d1979d554648df6d05f7723d1cc9e37430c7ca88d573
+ARG ZIG_URL=https://github.com/ziglang/zig/releases/download/${ZIG_VERSION}/zig-bootstrap-${ZIG_VERSION}.tar.xz
+ARG ZIG_SHA256=bf3fcb22be0b83f4791748adb567d3304779d66d7bf9b1bd557ef6c2e0232807
 
 LABEL version=0.14.0
 LABEL maintainer="Denys Holius <https://x.com/dengolius>"
