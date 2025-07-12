@@ -9,7 +9,7 @@ A docker image for [Zig](https://ziglang.org) based upon [Alpine Linux](https://
 ### Building an executable
 
 ```bash
-docker run -v $PWD:/app denisgolius/zig:0.14.0 build-exe hello.zig
+docker run -v $PWD:/app denisgolius/zig:0.14.1 build-exe hello.zig
 ```
 
 ## Available tags
