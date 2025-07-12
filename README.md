@@ -14,7 +14,7 @@ docker run -v $PWD:/app denisgolius/zig:0.14.0 build-exe hello.zig
 
 ## Available tags
 
-There are two variants of tags provided by this repository - release tags such as `0.14.0`, and `master` branch builds such as `master-6a65561e3`.
+There are two variants of tags provided by this repository - release tags such as `0.14.1`, and `master` branch builds such as `master-6a65561e3`.
 
 The most recent `master-X` build is always tagged as simply `master` as well as having a tag including the Git hash for the release.
 
