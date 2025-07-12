@@ -1,10 +1,10 @@
-FROM alpine:3.21.3
+FROM alpine:3.22.0
 
-ARG ZIG_VERSION=0.14.0
+ARG ZIG_VERSION=0.14.1
 ARG ZIG_URL=https://github.com/ziglang/zig/releases/download/${ZIG_VERSION}/zig-bootstrap-${ZIG_VERSION}.tar.xz
-ARG ZIG_SHA256=bf3fcb22be0b83f4791748adb567d3304779d66d7bf9b1bd557ef6c2e0232807
+ARG ZIG_SHA256=89b2fce50bfbb1eee29c382193d22c6eb0c7da3a96b5ba6d05e0af2945b3ca3d
 
-LABEL version=0.14.0
+LABEL version=0.14.1
 LABEL maintainer="Denys Holius <https://x.com/dengolius>"
 
 WORKDIR /usr/src

@@ -2,7 +2,7 @@
 
 [![Nightly Build](https://github.com/denisgolius/docker-zig/actions/workflows/nightly.yml/badge.svg)](https://github.com/denisgolius/docker-zig/actions/workflows/nightly.yml)
 
-A docker image for [Zig](https://ziglang.org) based upon [Alpine Linux](https://www.alpinelinux.org/releases/) `3.21.3` .
+A docker image for [Zig](https://ziglang.org) based upon [Alpine Linux](https://www.alpinelinux.org/releases/) `3.22.0` .
 
 ## Using this image
 
