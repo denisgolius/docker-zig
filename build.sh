@@ -7,7 +7,7 @@ version() {
 }
 
 # get the current list of releases
-RELEASES=$(curl -s https://ziglang.org/download/index.json)
+RELEASES=$(curl -s https://zig.squirl.dev/index.json)
 
 # get the details for the master build
 MASTER_RELEASE=$(echo "$RELEASES" | jq '.master')
